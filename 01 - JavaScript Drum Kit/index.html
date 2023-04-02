@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>01 - JavaScript Drum Kit</title>
+
+	<!-- Fonte Cairo 400, 700 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<main>
+		<button data-key="a" onclick="playSoundOnTouch('a')">
+			<kbd>A</kbd>
+			<span>Clap</span>
+		</button>
+
+		<button data-key="s" onclick="playSoundOnTouch('s')">
+			<kbd>S</kbd>
+			<span>Hihat</span>
+		</button>
+		
+		<button data-key="d" onclick="playSoundOnTouch('d')">
+			<kbd>D</kbd>
+			<span>Kick</span>
+		</button>
+		
+		<button data-key="f" onclick="playSoundOnTouch('f')">
+			<kbd>F</kbd>
+			<span>Openhat</span>
+		</button>
+		
+		<button data-key="g" onclick="playSoundOnTouch('g')">
+			<kbd>G</kbd>
+			<span>Boom</span>
+		</button>
+		
+		<button data-key="h" onclick="playSoundOnTouch('h')">
+			<kbd>H</kbd>
+			<span>Ride</span>
+		</button>
+		
+		<button data-key="j" onclick="playSoundOnTouch('j')">
+			<kbd>J</kbd>
+			<span>Snare</span>
+		</button>
+		
+		<button data-key="k" onclick="playSoundOnTouch('k')">
+			<kbd>K</kbd>
+			<span>Tom</span>
+		</button>
+		
+		<button data-key="l" onclick="playSoundOnTouch('l')">
+			<kbd>L</kbd>
+			<span>Tink</span>
+		</button>
+	</main>
+
+	<div>
+		<audio data-key="a" src="sounds/clap.wav" preload="auto"></audio>
+		<audio data-key="s" src="sounds/hihat.wav" preload="auto"></audio>
+		<audio data-key="d" src="sounds/kick.wav" preload="auto"></audio>
+		<audio data-key="f" src="sounds/openhat.wav" preload="auto"></audio>
+		<audio data-key="g" src="sounds/boom.wav" preload="auto"></audio>
+		<audio data-key="h" src="sounds/ride.wav" preload="auto"></audio>
+		<audio data-key="j" src="sounds/snare.wav" preload="auto"></audio>
+		<audio data-key="k" src="sounds/tom.wav" preload="auto"></audio>
+		<audio data-key="l" src="sounds/tink.wav" preload="auto"></audio>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

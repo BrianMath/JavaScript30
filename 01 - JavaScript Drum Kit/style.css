@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Cairo', sans-serif;
+}
+
+body {
+	background-image: radial-gradient(#076d58, #062d66);
+
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+	border: 2px solid black;
+	border-radius: 8px;
+	width: 4rem;
+
+	font-size: 1rem;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+
+	transition: all 0.1s ease-out;
+
+	-webkit-tap-highlight-color: #ff000034;
+}
+
+@media (hover: hover) {
+	button:hover, button.active {
+		transform: scale(1.1);
+		border-color: #ff0000;
+		font-weight: 700;
+	}
+}
+
+button kbd {
+	display: block;
+	font-size: 2rem;
+	margin-bottom: -15px;
+}
+
+button span {
+	font-size: 0.9rem;
+}
